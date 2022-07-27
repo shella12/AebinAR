@@ -21,11 +21,12 @@ ul{
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .main-container{
     padding: relative;
-    background: url(images/main-background.png) no-repeat;
+    background: url(../images/main-background.png) no-repeat;
     background-position: center;
     background-size:100% 100%;
 }
@@ -92,6 +93,13 @@ nav.active{
    font-weight: bolder;
    color: var(--grey);
 }
+.nav-links.active ul li:nth-child(1){ 
+    pointer-events: none;
+    color: #EC5242;
+    text-decoration: underline;
+    text-decoration-thickness: .3rem;
+ }
+
 
 
 /* main */
@@ -116,7 +124,7 @@ nav.active{
 }
 
 .main h2.banner-heading{
-    background-image: url(images/header-text-bg.jpg);
+    background-image: url(../images/header-text-bg.jpg);
     background-repeat: repeat;
     background-clip:text;
     -webkit-text-fill-color:transparent ;
@@ -167,7 +175,7 @@ nav.active{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:rgb(39, 42, 50) url(images/pattern_bg.png) repeat;
+    background:rgb(39, 42, 50) url(../images/pattern_bg.png) repeat;
     background-size: 50px;
     width: 100%;
     padding: 10%;
@@ -354,4 +362,10 @@ nav.active{
         padding: 1rem;
      }
 
+}
+
+.nav-links.active ul li:hover{ 
+    color: #EC5242;
+    text-decoration: underline;
+    text-decoration-thickness: .3rem;
 }
