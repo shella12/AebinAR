@@ -6,9 +6,13 @@
 - HTML, CSS, JavaScript
 - Linters
 
+## Feature Video
+
+Click this [Video](https://shella12.github.io/AebinAR.github.io/) to see a descriptive video about the features of the website 
+
 ## Live Demo
 
-[Live Demo](https://shella12.github.io/AebinAR.github.io/)
+Click here to see the [Live Demo](https://shella12.github.io/AebinAR.github.io/) of the website 
 
 ![](./images/multi-device-mockup.png)
 
