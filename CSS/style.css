@@ -511,6 +511,10 @@ nav.active {
   }
 
   /* speaker */
+  .speakers {
+    padding-bottom: 10px;
+    border-bottom: 2px solid#f9f6f6;
+  }
 
   .speakers .cards {
     display: grid;
