@@ -28,7 +28,6 @@ a {
 }
 
 .main-container {
-  padding: relative;
   background: #f9f6f6 url(../images/about-bg.png);
   background-repeat: space;
 }
@@ -39,7 +38,8 @@ a {
   padding: 15px 20px;
 }
 
-.navbar img, #join-us-link {
+.navbar img,
+#join-us-link {
   display: none;
 }
 
@@ -71,7 +71,7 @@ a {
   top: 24px;
 }
 
-.navbar div.nav-links ul {
+.navbar .nav-links ul {
   display: none;
 }
 
@@ -224,7 +224,7 @@ small.credits {
   color: #fff;
 }
 
-.partner-label ul {
+.partner .partner-label ul {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
@@ -232,7 +232,7 @@ small.credits {
   gap: 2rem;
 }
 
-.partner-label img {
+.partner .partner-label img {
   width: 90px;
 }
 
@@ -265,7 +265,7 @@ small.credits {
     display: none;
   }
 
-  .navbar div.nav-links ul {
+  .navbar .nav-links ul {
     display: flex;
     gap: 3rem;
   }

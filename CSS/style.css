@@ -121,8 +121,6 @@ nav.active {
   text-decoration-thickness: 0.3rem;
 }
 
-
-
 /* main */
 
 .main {
@@ -147,9 +145,9 @@ nav.active {
 .main h2.banner-heading {
   background-image: url(../images/header-text-bg.jpg);
   background-repeat: repeat;
-  background-clip: text;
+  background-clip: text;/* stylelint-disable */
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text;/* stylelint-enable */
   font-size: 1.9rem;
   line-height: 45px;
   text-transform: uppercase;
