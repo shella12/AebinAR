@@ -11,3 +11,21 @@ navMob.addEventListener('click', () => {
   navBar.classList.toggle('active');
   main.classList.toggle('active');
 });
+
+document.querySelectorAll('.nav-links > ul').forEach((n) => n.addEventListener('click', () => {
+  nav.classList.remove('active');
+  navMob.classList.remove('active');
+  navLink.classList.remove('active');
+  navBar.classList.remove('active');
+  main.classList.remove('active');
+}));
+
+window.addEventListener('resize', function () {
+  if (this.window.innerWidth >= 768) {
+    nav.classList.remove('active');
+    navMob.classList.remove('active');
+    navLink.classList.remove('active');
+    navBar.classList.remove('active');
+    main.classList.remove('active');
+  }
+});
