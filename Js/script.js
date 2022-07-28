@@ -1,25 +1,25 @@
 const arr=[
 {
     image:'./images/speaker_03.png',
-    title:'Noh So-young Sohyeong Noh',
-    occupation:'Art Center Nabi Director, CC Korea Director',
-    detail:'As the author of <Digital Art Art of Our Time>, he opened \'Art Center Nabi\', Korea\'s first digital art institution in 2000, and is currently serving.'
+    title:'Carol Sue. Dwecker, Ph.D.',
+    occupation:'Director of University of Islamabad, Aebinar Director',
+    detail:'As the author of \"mindset the new psychology of success\", she opened \'Psychology Center Islamabad\', Pakistan\'s first institution in 2000, helping youth of educational institutions to develop an innovative mindset, and is currently serving.'
 },
 {
     image:'./images/speaker_04.png',
-    title:'Noh So-young Sohyeong Noh',
-    occupation:'Art Center Nabi Director, CC Korea Director',
-    detail:'As the author of <Digital Art Art of Our Time>, he opened \'Art Center Nabi\', Korea\'s first digital art institution in 2000, and is currently serving.'
+    title:'Julia Lee Julia R.',
+    occupation:'Head of the Young world of Asia',
+    detail:'Asian integration and online youth participation in business and entrepreneurship are major concerns, and a report has been published that will potentially affect the revision of the Asia\'s small bussiness investment and incentive policy in July'
 },{
     image:'./images/speaker_05.png',
-    title:'Noh So-young Sohyeong Noh',
-    occupation:'Art Center Nabi Director, CC Korea Director',
-    detail:'As the author of <Digital Art Art of Our Time>, he opened \'Art Center Nabi\', Korea\'s first digital art institution in 2000, and is currently serving.'
+    title:'May Brotiko',
+    occupation:'Secretary General of the Wikimedia Foundation',
+    detail:'May Brotiko is the general secretary of the Wikimedia Foundation, a non-profit organization that runs Wikipedia. Wikipedia is provided free of charge in 290 languages ​​every month to over 100 million people, nearly half of the world\'s population'
 },{
     image:'./images/speaker_06.png',
-    title:'Noh So-young Sohyeong Noh',
-    occupation:'Art Center Nabi Director, CC Korea Director',
-    detail:'As the author of <Digital Art Art of Our Time>, he opened \'Art Center Nabi\', Korea\'s first digital art institution in 2000, and is currently serving.'
+    title:'Ryan Merkley Ryan Merkley',
+    occupation:'Creative Commons CEO, Former Mozilla Foundation COO',
+    detail:'He led open source projects at the Mozilla Foundation and joined CC as CEO in 2014. He has been active in open movements such as open government and open source'
 }
 ];
 
@@ -91,7 +91,7 @@ card2.appendChild(cardContent2);
 
 const cardTitle2=document.createElement('h3');
 cardTitle2.className="card-title";
-cardTitle2.innerHTML="Yochai Benkler";
+cardTitle2.innerHTML="Jeon Gil-nam Kilnam Chon";
 cardContent2.appendChild(cardTitle2);
 
 const cardOccupation2=document.createElement('p');
@@ -162,10 +162,11 @@ speakerBtn.classList.add('active');
 const speakerBtnLess=document.createElement('button');
 speakerBtnLess.className="speaker-btn";
 speakerBtnLess.innerText="Less"
-cardsDiv2.appendChild(speakerBtnLess);
+speaker.appendChild(speakerBtnLess);
 
 speakerBtnLess.addEventListener('click',function(){
 cardsDiv2.remove();
+speakerBtnLess.remove();
 speakerBtn.classList.remove('active')
 });
 })
