@@ -8,7 +8,7 @@
 
 ## Feature Video
 
-Click this [Video](https://shella12.github.io/AebinAR.github.io/) to see a descriptive video about the features of the website 
+Click this [Video](https://www.loom.com/share/a487932300f94d64b806d70cff9c12ed) to see a descriptive video about the features of the website 
 
 ## Live Demo
 
