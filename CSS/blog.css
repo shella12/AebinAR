@@ -309,7 +309,7 @@ small.credits {
   .nav-links ul li {
     position: relative;
     font-family: var(--font-heading), sans-serif;
-    font-size: 12px;
+    font-size: 0.9rem;
     font-weight: bolder;
     color: var(--grey);
     line-height: 1rem;
