@@ -8,7 +8,7 @@
 
 ## Feature Video
 
-Click this [Video](https://www.loom.com/share/a487932300f94d64b806d70cff9c12ed) to see a descriptive video about the features of the website 
+Click this [Video](https://www.loom.com/share/10df897914bc4e029701a413df19c05f) to see a descriptive video about the features of the website 
 
 ## Live Demo
 
