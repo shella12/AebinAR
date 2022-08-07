@@ -92,9 +92,10 @@ a {
   -moz-box-shadow: 10px 10px 49px 6px rgba(0, 0, 0, 0.75);
   top: 0;
   left: 0;
-  width: 60%;
-  height: 35.5rem;
+  width: 100%;
+  height: 100%;
   z-index: 10;
+  transition: all .5s ease;
 }
 
 nav.active {
@@ -281,6 +282,12 @@ nav.active {
   display: grid;
   grid-template-columns: 1fr;
 }
+.speakers .card:nth-child(n+3){
+  display: none;
+}
+.speakers .cards-mob > div {
+  display: flex !important;
+}
 
 .speakers .card {
   margin-top: 60px;
@@ -325,7 +332,7 @@ nav.active {
   color: var(--black);
 }
 
-.speakers .speaker-btn,.speakers .speaker-btn-less {
+.speakers .speaker-btn{
   margin: 20px 2px;
   padding: 1.2rem;
   border: 2px solid var(--orange);
@@ -338,10 +345,7 @@ nav.active {
   font-weight: bolder;
 }
 
-.speakers .speaker-btn.active,.speakers .speaker-btn-less.active {
-  display: none;
-}
-.remove{
+.speakers .speaker-btn.active{
   display: none;
 }
 
@@ -365,6 +369,7 @@ nav.active {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -582,6 +587,9 @@ nav.active {
   .speakers .card {
     gap: .6rem;
   }
+  .speakers .card:nth-child(n+3){
+    display: flex;
+  }
 
   .speakers .card-content .card-occupation {
     font-size: 0.7rem;
@@ -596,7 +604,7 @@ nav.active {
   }
 
   .speakers .speaker-btn,.speakers .cards-mob > div {
-    display: none;
+    display: none !important;
   }
 
   /* footer-desktop */

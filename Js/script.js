@@ -49,8 +49,6 @@ const speakerLine = document.createElement('hr');
 speakerLine.className = 'section-line';
 speaker.appendChild(speakerLine);
 
-// cards
-
 const cardsDiv = document.createElement('div');
 cardsDiv.className = 'cards';
 speaker.appendChild(cardsDiv);
@@ -97,10 +95,6 @@ function createSpeaker(cardsDiv2, start=null){
 }
 
 createSpeaker(cardsDiv);
-
-window.addEventListener('resize', ()=>{
-
-});
 
 const speakerBtn = document.createElement('button');
 speakerBtn.className = 'speaker-btn';
