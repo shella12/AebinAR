@@ -285,7 +285,7 @@ nav.active {
 .speakers .card {
   margin-top: 60px;
   display: flex;
-  gap: 1rem;
+  gap: .7rem;
 }
 
 .speakers .card img {
@@ -325,7 +325,7 @@ nav.active {
   color: var(--black);
 }
 
-.speakers .speaker-btn {
+.speakers .speaker-btn,.speakers .speaker-btn-less {
   margin: 20px 2px;
   padding: 1.2rem;
   border: 2px solid var(--orange);
@@ -338,9 +338,13 @@ nav.active {
   font-weight: bolder;
 }
 
-.speakers .speaker-btn.active {
+.speakers .speaker-btn.active,.speakers .speaker-btn-less.active {
   display: none;
 }
+.remove{
+  display: none;
+}
+
 
 /* partners */
 
@@ -520,14 +524,15 @@ nav.active {
 
   .program .cards {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     gap: 0.5rem;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 
   .program .card {
     gap: 0.7rem;
-    width: 20%;
+    width: 25%;
     flex-direction: column;
     padding: 0.4rem;
     padding-bottom: 2rem;
@@ -562,22 +567,24 @@ nav.active {
 
   /* speaker */
   .speakers {
+    padding: 5%;
     padding-bottom: 10px;
     border-bottom: 2px solid#f9f6f6;
   }
 
   .speakers .cards {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 1rem;
   }
 
   .speakers .card {
-    gap: 1.5rem;
+    gap: .6rem;
   }
 
   .speakers .card-content .card-occupation {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .speakers .card-content .card-line {
@@ -585,15 +592,11 @@ nav.active {
   }
 
   .speakers .card-content .card-detail {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
-  .speakers .speaker-btn {
-    width: fit-content;
-    padding: 1rem 5rem;
-    align-self: flex-end;
-    background-color: #fff;
-    color: #ec5242;
+  .speakers .speaker-btn,.speakers .cards-mob > div {
+    display: none;
   }
 
   /* footer-desktop */
@@ -625,6 +628,33 @@ nav.active {
     color: #fff;
     background-color: #ec5242;
   }
+}
+
+@media only screen and (min-width: 992px) {
+  .program .card{
+    width:18%;
+  }
+  /* speaker */
+  .speakers {
+    padding: 10%;
+  }
+
+  .speakers .card {
+    gap: .8rem;
+  }
+
+  .speakers .card-content .card-occupation {
+    font-size: 0.8rem;
+  }
+
+  .speakers .card-content .card-line {
+    width: 15%;
+  }
+
+  .speakers .card-content .card-detail {
+    font-size: 0.9rem;
+  }
+
 }
 
 .nav-links.active ul li:hover {
