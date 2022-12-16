@@ -99,15 +99,15 @@ Give a ⭐️ if you like this project!
 
 - **[Why use this app?]**
 
-  - [To create a personal book store. Add and remove books in the store and access them anywhere using the website]
+  - [To start or attend webinars]
 
 - **[Why build this app?]**
 
-  - [Its a good app to learn building with react as a begainner]
+  - [Its a good project fro beginners to learn HTML, CSS, Javascript and DOM manupilation]
 
 ## Acknowledgments <a name="acknowledgments"></a>
 
-- microverse documentation
+- Microverse documentation
 - Design by [Cindy Shin](https://www.behance.net/adagio07)
 
 ## 📝 License <a name="license"></a>
