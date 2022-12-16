@@ -69,7 +69,7 @@ Clone this repository to your desired folder:
   git clone git@github.com:shella12/AebinAR.github.io.git
 ```
 
-## Start server
+### Start server
 
 > download `live server` or open in browser
 
