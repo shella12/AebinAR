@@ -39,19 +39,12 @@ const arr = [
 // create model
 
 const speaker = document.querySelector('.speakers');
+speaker.innerHTML +=`
+<h2 class="section-heading">Featured Speakers</h2>
+<hr class="section-line">
+<div class="cards speaker-cards"></div>`
 
-const speakerHeading = document.createElement('h2');
-speakerHeading.className = 'section-heading';
-speakerHeading.innerHTML = 'Featured Speakers';
-speaker.appendChild(speakerHeading);
-
-const speakerLine = document.createElement('hr');
-speakerLine.className = 'section-line';
-speaker.appendChild(speakerLine);
-
-const cardsDiv = document.createElement('div');
-cardsDiv.className = 'cards';
-speaker.appendChild(cardsDiv);
+const cardsDiv=document.querySelector('.speaker-cards');
 
 //card function
 function createSpeaker(cardsDiv2, start=null){
@@ -60,47 +53,25 @@ function createSpeaker(cardsDiv2, start=null){
       index+=1;
       return;
     }
-    const card = document.createElement('div');
-    card.className = 'card';
-    cardsDiv2.appendChild(card);
-
-    const cardImage = document.createElement('img');
-    cardImage.src = arr[index].image;
-    card.appendChild(cardImage);
-
-    const cardContent = document.createElement('div');
-    cardContent.className = 'card-content';
-    card.appendChild(cardContent);
-
-    const cardTitle = document.createElement('h3');
-    cardTitle.className = 'card-title';
-    cardTitle.innerHTML = arr[index].title;
-    cardContent.appendChild(cardTitle);
-
-    const cardOccupation = document.createElement('p');
-    cardOccupation.className = 'card-occupation';
-    cardOccupation.innerHTML = arr[index].occupation;
-    cardContent.appendChild(cardOccupation);
-
-    const cardLine = document.createElement('hr');
-    cardLine.className = 'card-line';
-    cardContent.appendChild(cardLine);
-
-    const cardDetail = document.createElement('p');
-    cardDetail.className = 'card-detail';
-    cardDetail.innerHTML = arr[index].detail;
-    cardContent.appendChild(cardDetail);
+    cardsDiv2.innerHTML += `  <div class="card">
+    <img src=${arr[index].image} alt="speaker">
+    <div class="card-content">
+        <h3 class="card-title">${arr[index].title}</h3>
+        <p class="card-occupation">${arr[index].occupation}</p>
+        <hr class="card-line">
+        <p class="card-detail">${arr[index].detail}</p>
+    </div>
+</div>`
   });
 
 }
 
 createSpeaker(cardsDiv);
 
-const speakerBtn = document.createElement('button');
-speakerBtn.className = 'speaker-btn';
-speakerBtn.innerText = 'More';
-speaker.appendChild(speakerBtn);
+
+speaker.innerHTML +=`<button class="speaker-btn">More</button>`;
 cardsDiv.className = 'cards';
+const speakerBtn = document.querySelector('.speaker-btn');
 
 speakerBtn.addEventListener('click', () => {
   const cardsDiv2 = document.createElement('div');
