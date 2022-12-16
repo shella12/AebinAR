@@ -1,5 +1,5 @@
 const arr = [
-  
+
   {
     image: './images/speaker_01.png',
     title: 'Yochai Benkler',
@@ -33,24 +33,24 @@ const arr = [
     title: 'Ryan Merkley Ryan Merkley',
     occupation: 'Creative Commons CEO, Former Mozilla Foundation COO',
     detail: 'He led open source projects at the Mozilla Foundation and joined CC as CEO in 2014. He has been active in open movements such as open government and open source',
-  }
+  },
 ];
 
 // create model
 
 const speaker = document.querySelector('.speakers');
-speaker.innerHTML +=`
+speaker.innerHTML += `
 <h2 class="section-heading">Featured Speakers</h2>
 <hr class="section-line">
-<div class="cards speaker-cards"></div>`
+<div class="cards speaker-cards"></div>`;
 
-const cardsDiv=document.querySelector('.speaker-cards');
+const cardsDiv = document.querySelector('.speaker-cards');
 
-//card function
-function createSpeaker(cardsDiv2, start=null){
+// card function
+function createSpeaker(cardsDiv2, start = null) {
   arr.forEach((element, index) => {
-    if(start!==null && index < start){
-      index+=1;
+    if (start !== null && index < start) {
+      index += 1;
       return;
     }
     cardsDiv2.innerHTML += `  <div class="card">
@@ -61,15 +61,13 @@ function createSpeaker(cardsDiv2, start=null){
         <hr class="card-line">
         <p class="card-detail">${arr[index].detail}</p>
     </div>
-</div>`
+</div>`;
   });
-
 }
 
 createSpeaker(cardsDiv);
 
-
-speaker.innerHTML +=`<button class="speaker-btn">More</button>`;
+speaker.innerHTML += '<button class="speaker-btn">More</button>';
 cardsDiv.className = 'cards';
 const speakerBtn = document.querySelector('.speaker-btn');
 
