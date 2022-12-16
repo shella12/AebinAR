@@ -95,7 +95,6 @@ a {
   height: 100%;
   z-index: 10;
   transition: all .5s ease; 
-  backface-visibility: hidden;
 }
 
 nav.active {
@@ -238,6 +237,7 @@ small.credits {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }

@@ -1,44 +1,114 @@
-# AebinAR
-> This is a webinar website that holds webinars.
+# 📗 Table of Contents
 
-## Built With
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [❓ FAQ](#faq)
+- [👏 Acknowledgement](#acknowledgments)
+- [📝 License](#license)
 
-- HTML, CSS, JavaScript
-- Linters
+# 📖 [AebinAR] <a name="about-project"></a>
 
-## Feature Video
+> A website, to connect an audience and provide them with remote access to a platform for taking online seminars (webinar). 
 
-Click this [Video](https://www.loom.com/share/10df897914bc4e029701a413df19c05f) to see a descriptive video about the features of the website 
+> - Display a list of speakers.
+> - Display programs available.
+> - Share a blog about the most recent webinar. 
 
-## Live Demo
 
-Click here to see the [Live Demo](https://shella12.github.io/AebinAR.github.io/) of the website 
+## 🛠 Built With <a name="built-with"></a>
 
-![](./images/multi-device-mockup.png)
+### Tech Stack <a name="tech-stack"></a>
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://www.javascript.com/">Javascript</a></li>
+  </ul>
+</details>
 
-## Authors
+### Key Features <a name="key-features"></a>
 
-👤 **Author1**
+- **[Display list of programs available]**
+- **[Display speakers of webinar]**
+- **[Share a blog about the most recent webinar]**
 
-- GitHub: [@shella12](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Click this [Video](https://www.loom.com/share/10df897914bc4e029701a413df19c05f) to learn all about the features of this website 
 
-## 🤝 Contributing
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Click here to see the [Live Demo](https://shella12.github.io/AebinAR.github.io/) of the website
+
+![](./images/multi-device-mockup.png) 
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+In order to run this project you need:
+- Browser (Firefox / Google Chrome)
+- An IDE (e.g. VS code)
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com:shella12/AebinAR.github.io.git
+```
+
+## Start server
+
+> download `live server` or open in browser
+
+### Usage
+
+Connect an audience from all over the world to participate in the webinars. Never loose any event or meeting. Broadcast, presentation, screen sharing, polls and assessment, chat, Q&A will support your full immersion in the process. If you want to ask question with voice, just do it in one click.
+
+
+## 👥 Authors <a name="authors"></a>
+
+- GitHub: [@shella12](https://github.com/shella12)
+- Twitter: [@Ayesha Arshad](https://twitter.com/AyeshaA03712974)
+- LinkedIn: [Ayesha Arshad](https://www.linkedin.com/in/ayesha-arshad-a690a015a/)
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## ❓ FAQ <a name="faq"></a>
+
+- **[Why use this app?]**
+
+  - [To create a personal book store. Add and remove books in the store and access them anywhere using the website]
+
+- **[Why build this app?]**
+
+  - [Its a good app to learn building with react as a begainner]
+
+## Acknowledgments <a name="acknowledgments"></a>
 
 - microverse documentation
 - Design by [Cindy Shin](https://www.behance.net/adagio07)
 
-## 📝 License
+## 📝 License <a name="license"></a>
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
