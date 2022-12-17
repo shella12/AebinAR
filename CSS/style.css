@@ -92,9 +92,10 @@ a {
   -moz-box-shadow: 10px 10px 49px 6px rgba(0, 0, 0, 0.75);
   top: 0;
   left: 0;
-  width: 60%;
-  height: 35.5rem;
+  width: 100%;
+  height: 100%;
   z-index: 10;
+  transition: all 0.5s ease;
 }
 
 nav.active {
@@ -285,7 +286,21 @@ nav.active {
 .speakers .card {
   margin-top: 60px;
   display: flex;
-  gap: 1rem;
+  gap: 0.7rem;
+}
+
+.speaker-cards2 {
+  z-index: 100;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+.speaker-cards2.active {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  height: auto;
 }
 
 .speakers .card img {
@@ -338,7 +353,7 @@ nav.active {
   font-weight: bolder;
 }
 
-.speakers .speaker-btn.active {
+.speaker-btn.active {
   display: none;
 }
 
@@ -361,6 +376,7 @@ nav.active {
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -520,14 +536,15 @@ nav.active {
 
   .program .cards {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     gap: 0.5rem;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 
   .program .card {
     gap: 0.7rem;
-    width: 20%;
+    width: 25%;
     flex-direction: column;
     padding: 0.4rem;
     padding-bottom: 2rem;
@@ -562,22 +579,28 @@ nav.active {
 
   /* speaker */
   .speakers {
+    padding: 5%;
     padding-bottom: 10px;
     border-bottom: 2px solid#f9f6f6;
   }
 
-  .speakers .cards {
+  .speakers .cards,
+  .speaker-cards2,
+  .speaker-cards2.active {
     display: grid;
+    visibility: visible;
+    height: auto;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 1rem;
   }
 
   .speakers .card {
-    gap: 1.5rem;
+    gap: 0.6rem;
   }
 
   .speakers .card-content .card-occupation {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .speakers .card-content .card-line {
@@ -585,15 +608,11 @@ nav.active {
   }
 
   .speakers .card-content .card-detail {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
-  .speakers .speaker-btn {
-    width: fit-content;
-    padding: 1rem 5rem;
-    align-self: flex-end;
-    background-color: #fff;
-    color: #ec5242;
+  .speaker-btn {
+    display: none;
   }
 
   /* footer-desktop */
@@ -624,6 +643,33 @@ nav.active {
   nav #join-us-link:hover {
     color: #fff;
     background-color: #ec5242;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .program .card {
+    width: 18%;
+  }
+
+  /* speaker */
+  .speakers {
+    padding: 10%;
+  }
+
+  .speakers .card {
+    gap: 0.8rem;
+  }
+
+  .speakers .card-content .card-occupation {
+    font-size: 0.8rem;
+  }
+
+  .speakers .card-content .card-line {
+    width: 15%;
+  }
+
+  .speakers .card-content .card-detail {
+    font-size: 0.9rem;
   }
 }
 
