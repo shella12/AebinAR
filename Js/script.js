@@ -1,5 +1,5 @@
 const arr = [
-  
+
   {
     image: './images/speaker_01.png',
     title: 'Yochai Benkler',
@@ -37,8 +37,8 @@ const arr = [
 ];
 
 // card function
-function createSpeaker(cardsDiv, start = null, end =null) {
-  for (let i=start;i<end;i++){
+function createSpeaker(cardsDiv, start = null, end = null) {
+  for (let i = start; i < end; i += 1) {
     cardsDiv.innerHTML += `  <div class="card">
     <img src=${arr[i].image} alt="speaker">
     <div class="card-content">
@@ -48,7 +48,7 @@ function createSpeaker(cardsDiv, start = null, end =null) {
         <p class="card-detail">${arr[i].detail}</p>
     </div>
 </div>`;
-  };
+  }
 }
 
 // create model
@@ -70,15 +70,12 @@ createSpeaker(cardsDiv, 0, 2);
 createSpeaker(cardsDiv2, 2, arr.length);
 
 speakerBtnMore.addEventListener('click', () => {
-  
   cardsDiv2.classList.add('active');
   speakerBtnLess.classList.remove('active');
   speakerBtnMore.classList.add('active');
-
 });
 
-  speakerBtnLess.addEventListener('click', () => {
-  
+speakerBtnLess.addEventListener('click', () => {
   cardsDiv2.classList.remove('active');
   speakerBtnLess.classList.add('active');
   speakerBtnMore.classList.remove('active');
