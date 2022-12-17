@@ -57,26 +57,21 @@ const speaker = document.querySelector('.speakers');
 speaker.innerHTML += `
 <h2 class="section-heading">Featured Speakers</h2>
 <hr class="section-line">
-<div class="cards speaker-cards speaker-cards1"></div>
-<div class="cards speaker-cards speaker-cards2 active"></div>
-<button class="speaker-btn more active">More</button>
-<button class="speaker-btn less">Less</button>
+<div class="cards speaker-cards1"></div>
+<div class="cards speaker-cards2 active"></div>
+<button class="speaker-btn">More</button>
 `;
 const cardsDiv = document.querySelector('.speaker-cards1');
 const cardsDiv2 = document.querySelector('.speaker-cards2');
-const speakerBtnMore = document.querySelector('.more');
-const speakerBtnLess = document.querySelector('.less');
+const speakerBtn = document.querySelector('.speaker-btn');
 createSpeaker(cardsDiv, 0, 2);
 createSpeaker(cardsDiv2, 2, arr.length);
 
-speakerBtnMore.addEventListener('click', () => {
-  cardsDiv2.classList.add('active');
-  speakerBtnLess.classList.remove('active');
-  speakerBtnMore.classList.add('active');
-});
-
-speakerBtnLess.addEventListener('click', () => {
-  cardsDiv2.classList.remove('active');
-  speakerBtnLess.classList.add('active');
-  speakerBtnMore.classList.remove('active');
+speakerBtn.addEventListener('click', () => {
+  if (cardsDiv2.classList.contains('active')) {
+    speakerBtn.innerHTML = 'Less';
+  } else {
+    speakerBtn.innerHTML = 'More';
+  }
+  cardsDiv2.classList.toggle('active');
 });

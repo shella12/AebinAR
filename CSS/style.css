@@ -274,7 +274,8 @@ nav.active {
   align-items: center;
 }
 
-.speakers .section-heading {
+.speakers .section-heading,
+.partner .section-heading {
   color: var(--black);
 }
 
@@ -290,17 +291,15 @@ nav.active {
 }
 
 .speaker-cards2 {
+  flex-direction: column;
   z-index: 100;
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
+  visibility: visible;
+  height: auto;
 }
 
 .speaker-cards2.active {
-  display: flex;
-  flex-direction: column;
-  visibility: visible;
-  height: auto;
+  visibility: hidden;
+  height: 0;
 }
 
 .speakers .card img {
@@ -353,10 +352,6 @@ nav.active {
   font-weight: bolder;
 }
 
-.speaker-btn.active {
-  display: none;
-}
-
 /* partners */
 
 .partner {
@@ -366,10 +361,6 @@ nav.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.partner .section-heading {
-  color: var(--black);
 }
 
 .partner div.partner-label ul {
