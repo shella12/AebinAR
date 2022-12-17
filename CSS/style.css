@@ -282,17 +282,25 @@ nav.active {
   display: grid;
   grid-template-columns: 1fr;
 }
-.speakers .card:nth-child(n+3){
-  display: none;
-}
-.speakers .cards-mob > div {
-  display: flex !important;
-}
 
 .speakers .card {
   margin-top: 60px;
   display: flex;
   gap: .7rem;
+}
+
+.speaker-cards2 {
+  z-index: 100;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+
+.speaker-cards2.active {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  height: auto;
 }
 
 .speakers .card img {
@@ -345,7 +353,7 @@ nav.active {
   font-weight: bolder;
 }
 
-.speakers .speaker-btn.active{
+ .speaker-btn.active{
   display: none;
 }
 
@@ -576,9 +584,11 @@ nav.active {
     padding-bottom: 10px;
     border-bottom: 2px solid#f9f6f6;
   }
-
-  .speakers .cards {
+  
+  .speakers .cards,.speaker-cards2,.speaker-cards2.active {
     display: grid;
+    visibility: visible;
+    height: auto;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -587,10 +597,7 @@ nav.active {
   .speakers .card {
     gap: .6rem;
   }
-  .speakers .card:nth-child(n+3){
-    display: flex;
-  }
-
+  
   .speakers .card-content .card-occupation {
     font-size: 0.7rem;
   }
@@ -601,10 +608,10 @@ nav.active {
 
   .speakers .card-content .card-detail {
     font-size: 0.8rem;
-  }
+  } 
 
-  .speakers .speaker-btn,.speakers .cards-mob > div {
-    display: none !important;
+  .speaker-btn {
+    display: none;
   }
 
   /* footer-desktop */

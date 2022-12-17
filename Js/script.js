@@ -1,5 +1,5 @@
 const arr = [
-
+  
   {
     image: './images/speaker_01.png',
     title: 'Yochai Benkler',
@@ -36,57 +36,50 @@ const arr = [
   },
 ];
 
+// card function
+function createSpeaker(cardsDiv, start = null, end =null) {
+  for (let i=start;i<end;i++){
+    cardsDiv.innerHTML += `  <div class="card">
+    <img src=${arr[i].image} alt="speaker">
+    <div class="card-content">
+        <h3 class="card-title">${arr[i].title}</h3>
+        <p class="card-occupation">${arr[i].occupation}</p>
+        <hr class="card-line">
+        <p class="card-detail">${arr[i].detail}</p>
+    </div>
+</div>`;
+  };
+}
+
 // create model
 
 const speaker = document.querySelector('.speakers');
 speaker.innerHTML += `
 <h2 class="section-heading">Featured Speakers</h2>
 <hr class="section-line">
-<div class="cards speaker-cards"></div>`;
+<div class="cards speaker-cards speaker-cards1"></div>
+<div class="cards speaker-cards speaker-cards2 active"></div>
+<button class="speaker-btn more active">More</button>
+<button class="speaker-btn less">Less</button>
+`;
+const cardsDiv = document.querySelector('.speaker-cards1');
+const cardsDiv2 = document.querySelector('.speaker-cards2');
+const speakerBtnMore = document.querySelector('.more');
+const speakerBtnLess = document.querySelector('.less');
+createSpeaker(cardsDiv, 0, 2);
+createSpeaker(cardsDiv2, 2, arr.length);
 
-const cardsDiv = document.querySelector('.speaker-cards');
+speakerBtnMore.addEventListener('click', () => {
+  
+  cardsDiv2.classList.add('active');
+  speakerBtnLess.classList.remove('active');
+  speakerBtnMore.classList.add('active');
 
-// card function
-function createSpeaker(cardsDiv2, start = null) {
-  arr.forEach((element, index) => {
-    if (start !== null && index < start) {
-      index += 1;
-      return;
-    }
-    cardsDiv2.innerHTML += `  <div class="card">
-    <img src=${arr[index].image} alt="speaker">
-    <div class="card-content">
-        <h3 class="card-title">${arr[index].title}</h3>
-        <p class="card-occupation">${arr[index].occupation}</p>
-        <hr class="card-line">
-        <p class="card-detail">${arr[index].detail}</p>
-    </div>
-</div>`;
-  });
-}
-
-createSpeaker(cardsDiv);
-
-speaker.innerHTML += '<button class="speaker-btn">More</button>';
-cardsDiv.className = 'cards';
-const speakerBtn = document.querySelector('.speaker-btn');
-
-speakerBtn.addEventListener('click', () => {
-  const cardsDiv2 = document.createElement('div');
-  cardsDiv2.className = 'cards cards-mob';
-  speaker.appendChild(cardsDiv2);
-  createSpeaker(cardsDiv2, 2);
-
-  speakerBtn.classList.add('active');
-
-  const speakerBtnLess = document.createElement('button');
-  speakerBtnLess.className = 'speaker-btn';
-  speakerBtnLess.innerText = 'Less';
-  speaker.appendChild(speakerBtnLess);
+});
 
   speakerBtnLess.addEventListener('click', () => {
-    cardsDiv2.remove();
-    speakerBtnLess.remove();
-    speakerBtn.classList.remove('active');
-  });
+  
+  cardsDiv2.classList.remove('active');
+  speakerBtnLess.classList.add('active');
+  speakerBtnMore.classList.remove('active');
 });
