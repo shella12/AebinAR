@@ -12,7 +12,7 @@
 
 .main-container3 {
   background: #f9f6f6 url(../images/about-bg.png);
-  background-repeat: space;
+  background-repeat: no-repeat;
 }
 
 /* navbar */

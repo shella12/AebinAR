@@ -36,7 +36,6 @@ a {
 }
 
 .main-container {
-  /* padding: relative; */
   background: url(../images/main-background.png) no-repeat;
   background-position: center;
   background-size: cover;
@@ -433,16 +432,12 @@ nav.active {
   }
 
   .navbar {
-    padding-top: 3rem;
-  }
-
-  .navbar nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     justify-content: space-between;
-    padding: 1rem 3%;
+    padding: 4rem 3% 1rem 3%;
   }
 
   .navbar img {
