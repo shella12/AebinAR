@@ -10,7 +10,7 @@
   --font-para: 'Lato';
 }
 
-.main-container {
+.main-container3 {
   background: #f9f6f6 url(../images/about-bg.png);
   background-repeat: space;
 }
@@ -30,6 +30,14 @@
 }
 
 /* main */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+  padding: 0 5% 60px 5%;
+}
+
 .main h2.banner-heading3 {
   font-size: 1.9rem;
   line-height: 45px;
